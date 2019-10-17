@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      IPADDR: 192.168.1.11 
