@@ -1,7 +1,9 @@
 version: '3'
 services:
   web:
-    build: .
+    container_name: daikin-web
+    restart: unless-stopped
+    image: ehjortberg/daikin-web:latest
     ports:
       - "8000:80"
     environment:
